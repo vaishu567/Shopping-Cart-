@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(183, 217, 229);
+    color: darkcyan;
+
+
+}
+
+
+
+.heading{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    margin: 5px;
+    font-size:35px ;
+}
+
+
+.container{
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+
+}
+
+.app-holder{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+
+}
+
+.menu-cart{
+    background-color: lavenderblush;
+    height: 550px;
+    display:flex;
+    padding: 20px;
+    border-radius: 25px;
+    /* width: 69%; */
+
+
+}
+
+.menu {
+  padding-left: var(--s1);
+  padding-right: var(--s1);
+  border-right: 2px solid black;
+  width: 70%;
+}
+
+.menuitems {
+    padding: 20px; 
+    width: 60%;
+
+
+}
+
+.menu-item {
+  background-color: #dcdcdc;
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  margin: 10px;
+}
+
+.menu-text {
+  padding: 20px 0;
+}
+
+.menu-action {
+  margin-left: auto;
+} 
+
+.menu-action button {
+  padding: 15px 15px;
+  background-color: lightseagreen;
+  border-radius: 15px;
+  border: yellow;
+  font-size: 18px;
+  color: lavenderblush;
+  cursor: pointer;
+} 
+
+.menu-area > .menuitems + .menuitems {
+  margin-top: 20px;
+}
+
+.cartitems {
+  /* /* padding-left: 20px; */
+  /* padding-left: 30px;  */
+  padding: 25px;
+  border-left: 3.9px solid darkcyan;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  text-align: center;
+}
+
+/* #cart {
+  padding-left: var(--s1);
+  padding-right: var(--s1);
+  border-left: 2px solid black;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+} */
+
+.cart-area {
+  flex: 1 0 200px;
+  font-size: 19px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-item {
+  display: flex;
+  position: relative;
+}
+
+.cart-item .remove-butn {
+  /* position: absolute; */
+  /* right: calc(20 * -1); */
+  background-color: #e05555;
+  border: #e05555;
+  margin-left: 6px;
+  color: lavenderblush;
+
+  border-radius: 5px;
+  /* top: 50%; */
+  /* transform: translateY(-50%); */
+}
+
+.item-total {
+  margin-left: auto;
+}
+
+.cart-total {
+  font-size: 23px;
+  border-top: 3px solid darkcyan;
+  padding: 25px;
+  margin-top: auto !important;
+}
+
+/* can be removed because we then append to cart list */
+.cart-area > .cart-item {
+  margin-top: 29px;
+}
+
+/* since we introduced cart-list */
+.cart-list > .cart-item {
+  margin-top: 20px;
+}
